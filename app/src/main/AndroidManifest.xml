@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shelly.ambar.chatup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/finalchatuplogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/finalchatuplogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".EnterActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shelly.ambar.chatup.EnterActivity" />
+        </activity>
+        <activity
+            android:name=".ResetPassword"
+            android:theme="@style/Theme.UserBigDialog.AppCompat"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shelly.ambar.chatup.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".EnterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shelly.ambar.chatup.EnterActivity" />
+        </activity>
+        <activity android:name=".EnterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpCardsActivity"
+            android:noHistory="true"
+            android:parentActivityName=".EnterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shelly.ambar.chatup.EnterActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shelly.ambar.chatup.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".PitchSpeachActivity"
+            android:theme="@style/Theme.UserDialog.AppCompat" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:launchMode="standard"
+            android:theme="@style/Theme.UserBigDialog.AppCompat" />
+        <activity
+            android:name=".CommentsActivity"
+            android:launchMode="standard"
+            android:theme="@style/Theme.UserDialog.AppCompat" />
+        <activity
+            android:name=".FollowersActivity"
+            android:theme="@style/Theme.UserBigDialog.AppCompat" />
+        <activity android:name=".StoryActivity" />
+        <activity android:name=".FilterActivity" />
+        <activity android:name=".AddStoryActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".PostActivity" />
+        <activity
+            android:name=".VideoActivity"
+            android:theme="@style/Theme.UserBigDialog.AppCompat" />
+        <activity android:name=".FindFriendsActivity" />
+        <activity
+            android:name=".ForgotPassActivity"
+            android:theme="@style/Theme.UserBigDialog.AppCompat" />
+        <activity android:name=".SettingsActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ShowPeopleOnMap"
+            android:label="@string/title_activity_show_people_on_map"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.MinWidth" />
+        <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog.MinWidth" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".AllChatsActivity" />
+        <activity
+            android:name=".MatchActivity"
+            android:theme="@style/Theme.UserDialog.AppCompat" />
+
+
+
+        <activity android:name=".NotificationActivity">
+            <intent-filter>
+                <action android:name="com.shelly.ambar.chatup.TARGETNOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileActivity"
+
+            android:launchMode="standard"
+            android:theme="@style/Theme.UserBigDialog.AppCompat"
+            />
+        <service
+            android:name=".Service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/finalchatuplogo" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+
+
+    </application>
+
+</manifest>

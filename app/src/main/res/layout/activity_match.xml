@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nav_background"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:theme="@style/Theme.UserDialog.AppCompat"
+    tools:context=".MatchActivity">
+
+    <TextView
+        android:id="@+id/matchNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="MATCH NAMES"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="3dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+            app:civ_border_color="@color/com_facebook_blue"
+            app:civ_border_width="5dp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="3dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+            app:civ_border_color="@android:color/holo_red_dark"
+            app:civ_border_width="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/match_wohoo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/match"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/massageToMatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/button_send"
+            android:hint="@string/match_hint"
+            android:maxLines="3"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/com_facebook_blue" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/chat_send" />
+
+    </RelativeLayout>
+
+</LinearLayout>

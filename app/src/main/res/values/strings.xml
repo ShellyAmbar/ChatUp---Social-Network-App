@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">ChatUp</string>
+    <string name="facebook_app_id" translatable="false">1848191811954095</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1848191811954095</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    //enter
+    <string name="signup">Sign Up</string>
+    <string name="terms">Terms Of Service</string>
+    <string name="login">Login</string>
+
+
+    //menu
+    <string name="action_settings">Settings</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="report">Report</string>
+    <string name="open">Open</string>
+    <string name="save">Save</string>
+    <string name="block">Block</string>
+    <string name="search">Search</string>
+    <string name="mute">Mute</string>
+    <string name="media">Madia</string>
+    //signup
+    <string name="gender">I am a </string>
+    <string name="age">My age is </string>
+    <string name="signup_now">Sign Up Now !</string>
+    <string name="or">OR</string>
+    <string name="pressSignIn">Already account? press to sign In! </string>
+    <string name="resetPass">Reset Password </string>
+    <string name="signUpMe">Got it! Sign me up NOW!</string>
+
+    //cards sign up
+    <string name="one">welcome to ChatUP</string>
+    <string name="two">Meet new people in a different way!</string>
+    <string name="tree">Keep in touch socially!</string>
+    <string name="four">Keep in touch with them!</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="nickName">Enter your nick name</string>
+
+    //main drawer
+    <string name="signOutDrawer">SignOut</string>
+    <string name="allUsersAroundDrawer">All users around you</string>
+    <string name="changePassDrawer">Change password</string>
+    <string name="settingsDrawer">Settings</string>
+    <string name="shareDrawer">All users on map </string>
+    <string name="contactWithUsDrawer">Contact with us</string>
+    <string name="title_activity_home_page2" translatable="false">HomePage2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_show_people_on_map" translatable="false">Map</string>
+    <string name="title_activity_maps2">Map</string>
+
+    //settings
+    <string name="changePicture">Change Picture</string>
+    <string name="Your_current_city">Your current city</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+
+    <string name="looking_to_meet">I am looking to meet :</string>
+    <string name="Show_from_age">Show from age : </string>
+    <string name="To_age">To age : </string>
+    <string name="my_education">Select your education: </string>
+    <string name="match_education">Select education to your MATCH: </string>
+    <string name="Match_current_city" translatable="false">Match current city</string>
+    <string name="about">Enter a few words about yourself  </string>
+    <string name="hint_about">Write here a few things about yourself so that people could know you better and follow you back.</string>
+    <string name="Submit">Submit</string>
+
+    //comments
+    <string name="add_comment">Add a comment here ...</string>
+    <string name="postBTN">POST</string>
+
+    <string name="next">Next </string>
+    <string name="change_pass">CHANGE PASSWORD</string>
+    //login
+
+    <string name="signUpBTN">Do not have an account?</string>
+    <string name="signUpEmailBTN">Sign Up now with your Email! </string>
+
+    //speach
+    <string name="textToSpeach">Text to speech</string>
+    <string name="Pitch">Pitch </string>
+    <string name="Speed">Speed</string>
+    <string name="pressToHear">Press to Hear </string>
+
+    //post
+    <string name="cropBtn">Crop </string>
+    <string name="postBtn">Post </string>
+    <string name="description">Write your Description here..</string>
+
+    //video
+    <string name="postVideo">Post video</string>
+    <string name="playBtn">PLAY AGAIN</string>
+    <string name="stop">STOP</string>
+
+    //editImage
+    <string name="brightness">BRIGHTNESS</string>
+    <string name="constraint">CONSTRAINT  </string>
+    <string name="saturetion">SATURATION</string>
+
+    <string name="notifications">Notifications</string>
+
+    //profile
+    <string name="post">Posts</string>
+    <string name="Followers">Followers</string>
+    <string name="Following">Following</string>
+    <string name="FollowMeBTN">Follow Me</string>
+    <string name="Search">Search someone..</string>
+    <string name="match">WoHoo! It\'s a MATCH!!</string>
+    <string name="match_hint">Write something to your match..=)..</string>
+
+    <string name="default_notification_channel_id" translatable="false">shelly_CH_01</string>
+    <string name="forgotPass">Forgot your Password?</string>
+
+
+</resources>

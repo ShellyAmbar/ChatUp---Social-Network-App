@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/signUp_activity"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentTop="true"
+            android:background="@drawable/backchatup" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|start">
+
+            <AutoCompleteTextView
+                android:id="@+id/password"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:hint="@string/prompt_password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal|start">
+
+            <AutoCompleteTextView
+                android:id="@+id/UserNameText"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/nickName"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="77dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:checked="true"
+                    android:onClick="CheckClick"
+                    android:text="@string/Male" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent"
+                    android:onClick="CheckClick"
+                    android:text="@string/Female" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/age"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+
+                android:id="@+id/seekBar_Age"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/progressAge"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/sign_up_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/circle_shape"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="@string/signup_now"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+
+            android:id="@+id/signUp_layout_or"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <View
+
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_primary_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/or" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_primary_dark" />
+        </LinearLayout>
+
+
+        <TextView
+
+            android:id="@+id/btn_signup_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/pressSignIn"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+
+            android:id="@+id/login_layout_or_2"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <View
+
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_primary_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/or" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="@color/design_default_color_primary_dark" />
+        </LinearLayout>
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="216dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

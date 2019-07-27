@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardElevation="30dp"
+        android:background="@color/colorPrimaryDark"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/nav_background">
+
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:text="text"
+
+                android:textColor="#ffff"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="description"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/image"
+                android:layout_width="271dp"
+                android:layout_height="164dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:foregroundGravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/com_facebook_profile_picture_blank_square" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/regular_colorful_back"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/nav_background"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_marginBottom="10dp"
+                    app:civ_border_overlay="false" />
+
+                <Button
+
+                    android:id="@+id/btn_change_img"
+                    android:layout_width="228dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/green_button"
+                    android:padding="5dp"
+                    android:text="@string/changePicture"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+
+                <Button
+
+
+                    android:id="@+id/btn_my_location"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/ic__location"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or"
+                    android:textColor="@color/BtnColor"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/new_location_provided"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/Your_current_city"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/Arrow_down_city"
+                    android:layout_width="35dp"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/ic__arrow" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/new_match_location_provided"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/Match_current_city"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/Arrow_down_match_city"
+                    android:layout_width="35dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/new_match_location_provided"
+                    app:srcCompat="@drawable/ic__arrow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Male"
+                        android:layout_width="77dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:checked="true"
+                        android:onClick="CheckClick"
+                        android:text="@string/Male" />
+
+                    <RadioButton
+                        android:id="@+id/Female"
+                        android:layout_width="94dp"
+                        android:layout_height="match_parent"
+                        android:onClick="CheckClick"
+                        android:text="@string/Female" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/looking_to_meet"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Male2"
+                        android:layout_width="77dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:checked="true"
+                        android:onClick="CheckClickInterested"
+                        android:text="@string/Male" />
+
+                    <RadioButton
+                        android:id="@+id/Female2"
+                        android:layout_width="94dp"
+                        android:layout_height="match_parent"
+                        android:onClick="CheckClickInterested"
+                        android:text="@string/Female" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/age"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+
+                    android:id="@+id/seekBar_Age"
+                    android:layout_width="228dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp" />
+
+                <TextView
+                    android:id="@+id/progressAge"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|fill_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Show_from_age"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+
+                    android:id="@+id/seekBar_Start_Age"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp" />
+
+                <TextView
+                    android:id="@+id/progressStartAge"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/To_age"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+
+                    android:id="@+id/seekBar_End_Age"
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp" />
+
+                <TextView
+                    android:id="@+id/progressEndAge"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/my_education"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/my_education" />
+
+                <ImageView
+                    android:id="@+id/Arrow_down_my_education"
+                    android:layout_width="35dp"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/ic__arrow" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/education_choice"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/match_education" />
+
+                <ImageView
+                    android:id="@+id/Arrow_down_education"
+                    android:layout_width="35dp"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/ic__arrow" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/about"
+                    android:textColor="@color/TextColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Chage_About"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:hint="@string/hint_about"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/submit_btn"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/circle_shape"
+                    android:text="@string/Submit"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

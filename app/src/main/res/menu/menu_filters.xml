@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:title="@string/open"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:id="@+id/Action_open"
+        android:enabled="true"
+        />
+    <item android:title="@string/save"
+        app:showAsAction="always"
+        android:orderInCategory="101"
+        android:id="@+id/Action_save"
+        android:enabled="true"
+        />
+</menu>

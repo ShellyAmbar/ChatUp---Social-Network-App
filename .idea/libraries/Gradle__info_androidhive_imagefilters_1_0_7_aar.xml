@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: info.androidhive:imagefilters:1.0.7@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/816ea28f0bb346b28969190db9c71634/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/816ea28f0bb346b28969190db9c71634/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.androidhive/imagefilters/1.0.7/217b606a4dfb78b1da346fa16b5a8e1fd3a99ede/imagefilters-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/main_SignOut"
+            android:icon="@drawable/ic_sign_out"
+            android:title="@string/signOutDrawer" />
+        <item
+            android:id="@+id/main_AllUsers"
+            android:icon="@drawable/ic_all_users"
+            android:title="@string/allUsersAroundDrawer" />
+        <item
+            android:id="@+id/main_change_pass"
+            android:icon="@drawable/ic_forgot_pass"
+            android:title="@string/changePassDrawer" />
+        <item
+            android:id="@+id/main_Settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settingsDrawer" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/main_share"
+                android:icon="@drawable/ic_person"
+                android:title="@string/shareDrawer" />
+            <item
+                android:id="@+id/main_contact"
+                android:icon="@drawable/ic_send"
+                android:title="@string/contactWithUsDrawer" />
+        </menu>
+    </item>
+</menu>

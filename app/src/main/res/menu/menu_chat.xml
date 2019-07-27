@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/block_user" android:title="@string/block"></item>
+    <item android:id="@+id/search_user" android:title="@string/search"></item>
+    <item android:id="@+id/mute_user" android:title="@string/mute"></item>
+    <item android:id="@+id/media_user" android:title="@string/media"></item>
+    <item android:id="@+id/report_user" android:title="@string/report"></item>
+</menu>
